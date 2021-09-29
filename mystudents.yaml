@@ -1,0 +1,13 @@
+---
+- mstudents:
+        - name: raju
+        - phno: 787878888
+        - add: srikakulam
+
+        - name: ramu
+        - phno: 9490800644
+        - add: sompeta
+
+        - name: gandhi 
+        - phno: 9493009874
+        - add: reddy peta

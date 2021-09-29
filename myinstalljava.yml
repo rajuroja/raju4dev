@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+- name: i want to install java on ubuntu
+  apt:
+   name:
+   state: present
+  when: ansible_os_family=="Debian"
+- name: i want to install java on redhat
+  yum:
+   name:
+   state: present
+  when: ansible_os_family=="RedHat"

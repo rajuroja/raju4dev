@@ -3,3 +3,8 @@
 [mywebservers]
 172.31.13.227
 172.31.39.144
+
+
+[mywebservers:vars]
+mywebpackforubuntu=apache2
+mywebpackforredhat=httpd

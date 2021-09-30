@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.39.144
+- hosts: 172.31.13.227
   become: yes
   tasks:
   - name: i want to execute linux command
@@ -12,9 +12,9 @@
     apt:
       name: git
       state: present
-    when: myresult.stderr==""
+    when: myresult.stderr ==""
   - name: i want to install tree
     apt: 
       name: tree
       state: present
-    when: myresult.stderr!==""
+    when: myresult.stderr !==""

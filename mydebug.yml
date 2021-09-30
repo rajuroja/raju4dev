@@ -4,17 +4,17 @@
   tasks:
   - name: i want to execute linux command
     command: hostname -f
-    register: myresult
+    register: myresults
   - name: i want to display myresult
     debug:
      msg: "{{myresult}}"
   - name: i want to install git
-    yum:
+    apt:
       name: git
       state: present
     when: myresult.stderr ==""
   - name: i want to install tree
-    yum: 
+    apt: 
       name: tree
       state: present
     when: myresult.stderr !=""

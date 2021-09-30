@@ -9,12 +9,12 @@
     debug:
      msg: "{{myresult}}"
   - name: i want to install git
-    apt:
+    yum:
       name: git
       state: present
     when: myresult.stderr ==""
   - name: i want to install tree
-    apt: 
+    yum: 
       name: tree
       state: present
-    when: myresult.stderr !==""
+    when: myresult.stderr !=""

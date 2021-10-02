@@ -9,5 +9,5 @@
       state: present
   - name: i want to copy indexfile into ansible node side
     template:
-    src: myindex.j2
-    dest: /var/www/html/index.html
+       src: myindex.j2
+       dest: /var/www/html/index.html

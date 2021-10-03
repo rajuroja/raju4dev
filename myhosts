@@ -1,8 +1,7 @@
 
 
 [mywebservers]
-172.31.13.227
-172.31.39.144
+172.31.6.61
 
 
 [mywebservers:vars]

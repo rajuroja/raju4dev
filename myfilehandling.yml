@@ -14,5 +14,5 @@
   - name: i want to download remote files into ansible node side
     get_url:
         url: https://get.jenkins.io/war-stable/2.303.1/jenkins.war
-        dest: /home/ubuntu/
+        dest: /home/maha/
         force_basic_auth: yes

@@ -12,7 +12,7 @@
      name: wget
      states: present
     tags: mywget
-    
+    ignore_errors: yes
   - name: install tree
     apt:
      name: tree

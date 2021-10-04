@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.6.61
+  become: yes
+  tasks:
+  - name: i want to install multipackage
+    apt:
+     name: "{{item}}"
+     state: present
+    loop:
+      - tree
+      - wget
+      - git

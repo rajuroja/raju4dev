@@ -1,2 +1,13 @@
 ---
 # tasks file for tomcatonubuntu
+- include_tasks: myjavainstall.yml
+- include_tasks: mytomcatuser.yml
+- include_tasks: downloadExtract.yml
+- include_tasks: Permissions.yml
+- include_tasks: mytomservice.yml
+- include_tasks: mytomstart.yml
+- include_tasks: myTomcatWebManagement.yml
+- include_tasks: mytomrestart.yml
+- include_tasks: mydeployjavaapp.yml
+- include_tasks: mytomrestart.yml
+

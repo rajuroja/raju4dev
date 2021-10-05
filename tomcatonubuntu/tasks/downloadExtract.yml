@@ -1,0 +1,15 @@
+---
+- name: download tomcat tar file
+  get_url:
+    url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+    dest: /home/maha/apache-tomcat-8.5.5.tar.gz
+    force_basic_auth: yes
+- name: create directory
+  file:
+    name: /opt/tomcat
+    state: directory
+    mode: '0755'
+- name: extract tar file
+  command:
+    cmd: tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+    creates: /opt/tomcat/LICENSE
